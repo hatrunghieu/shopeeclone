@@ -1,0 +1,103 @@
+:root {
+    --while-color: #fff; 
+    --black-color: #000;
+    --text-color: #333;
+    --main-color: #ee4d2d;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__column-2 {
+    width: calc(100% / 6);
+    padding: 0 5px;
+}
+
+.grid__column-10-2 {
+    width: 20%;
+    padding: 0 5px;
+}
+
+.grid__column-10 {
+    width: calc(100% / 6 * 5);
+    padding: 0 5px;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.button {
+    height: 34px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    min-width: 60px;
+    margin-right: 3px;
+    font-size: 1.4rem;
+    background-color: var(--while-color);
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.button--primary {
+    height: 34px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #fb5533;
+    min-width: 60px;
+    margin-right: 3px;
+    color: var(--while-color);
+    cursor: pointer;
+}
+
+.pagination__list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.pagination__item {
+    margin: 0 16px;
+}
+
+.pagination__item-link {
+    text-decoration: none;
+    color: #939393;
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    min-width: 40px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.pagination__item--active .pagination__item-link {
+    background-color: var(--main-color);
+    color: var(--while-color);
+}
